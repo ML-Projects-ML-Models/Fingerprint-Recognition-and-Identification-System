@@ -77,6 +77,9 @@ Contributions are welcome! Open an issue or submit a pull request for suggestion
 **GitHub:** [dbrightson](https://github.com/dbrightson)  
 **Email:** dbrightson797@gmail.com
 
+**Name:** Santhosh P  
+**GitHub:** [santhoshparthiban2002](https://github.com/santhoshparthiban2002)
+
 ---
 
 ## 🌌 **Acknowledgements**
