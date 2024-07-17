@@ -24,7 +24,7 @@ This project leverages cutting-edge technology to accurately identify users usin
 
 - **Node.js** (v14+)
 - **npm**
-- **MongoDB** (or similar database)
+- **Django** or **MongoDB**
 - **Framer Motion**
 - **Material-UI**
 
