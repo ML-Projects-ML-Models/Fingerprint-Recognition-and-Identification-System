@@ -1,0 +1,177 @@
+/* src/components/FileUploader.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .hacker-theme {
+    background-color: black;
+    color: #39ff14;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    overflow: hidden;
+    width: 100vw; /* Ensure full width */
+    height: 100vh; /* Ensure full height */
+  }
+  
+  .cube {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #39ff14;
+    opacity: 0.8;
+    animation: fall linear infinite;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
+  .hacker-button {
+    color: #39ff14;
+    background-color: transparent;
+    border: 2px solid #39ff14;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-bottom: 20px; /* Space between button and text */
+  }
+  
+  .hacker-button:hover {
+    background-color: black;
+    color: #39ff14;
+    transform: scale(1.05);
+  }
+  
+  .hacker-text {
+    color: #39ff14;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .glitch {
+    position: relative;
+    color: #39ff14;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
+  }
+  
+  .glitch::before, .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: glitch 2s infinite;
+  }
+  
+  .glitch::before {
+    left: 2px;
+    text-shadow: -2px 0 red;
+    animation: glitch 1.5s infinite;
+  }
+  
+  .glitch::after {
+    left: -2px;
+    text-shadow: -2px 0 blue;
+    animation: glitch 2s infinite;
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip: rect(42px, 9999px, 44px, 0);
+      transform: skew(0.08deg);
+    }
+    5% {
+      clip: rect(65px, 9999px, 33px, 0);
+      transform: skew(0.2deg);
+    }
+    10% {
+      clip: rect(84px, 9999px, 90px, 0);
+      transform: skew(0.08deg);
+    }
+    15% {
+      clip: rect(17px, 9999px, 91px, 0);
+      transform: skew(0.15deg);
+    }
+    20% {
+      clip: rect(10px, 9999px, 94px, 0);
+      transform: skew(0.08deg);
+    }
+    25% {
+      clip: rect(68px, 9999px, 41px, 0);
+      transform: skew(0.2deg);
+    }
+    30% {
+      clip: rect(82px, 9999px, 94px, 0);
+      transform: skew(0.08deg);
+    }
+    35% {
+      clip: rect(28px, 9999px, 84px, 0);
+      transform: skew(0.15deg);
+    }
+    40% {
+      clip: rect(33px, 9999px, 92px, 0);
+      transform: skew(0.08deg);
+    }
+    45% {
+      clip: rect(90px, 9999px, 100px, 0);
+      transform: skew(0.2deg);
+    }
+    50% {
+      clip: rect(38px, 9999px, 92px, 0);
+      transform: skew(0.08deg);
+    }
+    55% {
+      clip: rect(66px, 9999px, 38px, 0);
+      transform: skew(0.15deg);
+    }
+    60% {
+      clip: rect(16px, 9999px, 90px, 0);
+      transform: skew(0.08deg);
+    }
+    65% {
+      clip: rect(90px, 9999px, 91px, 0);
+      transform: skew(0.2deg);
+    }
+    70% {
+      clip: rect(80px, 9999px, 96px, 0);
+      transform: skew(0.08deg);
+    }
+    75% {
+      clip: rect(99px, 9999px, 78px, 0);
+      transform: skew(0.15deg);
+    }
+    80% {
+      clip: rect(10px, 9999px, 79px, 0);
+      transform: skew(0.08deg);
+    }
+    85% {
+      clip: rect(27px, 9999px, 88px, 0);
+      transform: skew(0.2deg);
+    }
+    90% {
+      clip: rect(84px, 9999px, 80px, 0);
+      transform: skew(0.08deg);
+    }
+    95% {
+      clip: rect(94px, 9999px, 99px, 0);
+      transform: skew(0.15deg);
+    }
+    100% {
+      clip: rect(17px, 9999px, 92px, 0);
+      transform: skew(0.08deg);
+    }
+  }
+  
